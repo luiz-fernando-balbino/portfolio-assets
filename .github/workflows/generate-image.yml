@@ -19,15 +19,13 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          user: 'NandoLu'
+          user: 'luiz-fernando-balbino'
           filename: 'github-contributions-calendar.svg'
           base: ''
           plugin_isocalendar: 'yes'
           plugin_isocalendar_duration: 'full-year'
           plugin_isocalendar_mode: 'normal' # Força o modo 2D
           template: classic
-          plugin_isocalendar_start: '2025'
-          plugin_isocalendar_end: '2025'
 
       - name: Commit and Push
         run: |
